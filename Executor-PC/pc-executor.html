@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executor PC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Membungkus card dalam container grid */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan lebar yang sama */
+            gap: 20px; /* Menambahkan jarak antar card */
+            justify-content: center; /* Menyusun card di tengah */
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 100%; /* Mengatur lebar produk sesuai dengan grid */
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image img {
+            width: 100%;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .buy-now-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e4e4e;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .buy-now-button:hover {
+            background-color: #4e4e4e;
+        }
+
+        /* Button Kembali ke Beranda */
+        .back-home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #444444;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .back-home-button:hover {
+            background-color: #2d2d2d;
+        }
+
+        /* Responsif untuk layar lebih kecil */
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: 1fr; /* Mengubah menjadi satu kolom pada layar kecil */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Tombol Kembali ke Beranda -->
+    <div class="product-container">
+        <a href="../index.html" class="back-home-button"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <div class="product-container">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./LunaExecutor.png" alt="Product Image">
+            </div>
+            <div class="product-content">
+                <h2 class="product-title">Luna - Executor Roblox Free</h2>
+                <a href="https://discord.gg/getluna" class="buy-now-button">Get</a>
+            </div>
+        </div>
+    </div>
+</body>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+</html>

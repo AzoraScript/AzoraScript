@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azora Script</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #2d3436;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            margin-top: 1rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .product-details {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .detail {
+            flex: 1 1 calc(50% - 1rem);
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .detail h4 {
+            margin: 0 0 0.5rem 0;
+            color: #2d3436;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #2d3436;
+            color: white;
+        }
+
+        .copy-button {
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2e2e2e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .copy-button:hover {
+            background-color: #4b4b4b;
+        }
+
+        /* Tombol Kembali ke Beranda */
+        .back-home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333; /* Warna abu-abu */
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-home-button:hover {
+            background-color: #333333b7; /* Warna abu-abu lebih terang saat hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Azora Script</a></h1>
+    </header>
+
+    <div class="container">
+        <h2 class="product-title">Speed Hub - Fisch</h2>
+        <img src="./Image/fisch.jpg" alt="Product Image" class="product-image">
+
+        <div class="product-description">
+            <p>Fisch is a game on the Roblox platform that has become quite popular. In this game, players take on the role of a character trying to catch fish and various other sea creatures. The basic concept of the game is fishing, using different tools and strategies provided within the game. Players can use nets or other equipment to catch fish and collect their catch to earn points or in-game currency.</p>
+        </div>
+
+        <div class="product-details">
+            <div class="detail">
+                <h4>Feature</h4>
+                <p>  Auto Farm <br>
+                     Auto Cast <br>
+                     Auto Sell <br>
+                     Instant Fishing <br>
+                     Double Cast <br>
+                     Instant Shake <br>
+                     Zone Fishing <br>
+                    & other</p>
+            </div>
+            <div class="detail">
+                <h4></h4>
+                <p id="script-text"><strong>loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()</strong></p>
+                <button class="copy-button" onclick="copyScript()">Copy Script</button>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali ke Beranda -->
+        <a href="index.html" class="back-home-button"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <footer>
+        <p>Contact US </p>
+    </footer>
+
+    <script>
+        function copyScript() {
+            const scriptText = document.getElementById('script-text').innerText;
+            navigator.clipboard.writeText(scriptText)
+                .then(() => {
+                    alert('Script copied to clipboard!');
+                })
+                .catch((error) => {
+                    alert('Failed to copy script: ' + error);
+                });
+        }
+    </script>
+</body>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+</html>
